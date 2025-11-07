@@ -43,14 +43,14 @@ readonly GITHUB_OWNER="${REPO_OWNER:-${GITHUB_OWNER:-${GITHUB_REPO%%/*}}}"
 # Example: "your-repo"
 # GitHub Actions: Set via vars.PROJECT_SHORT_NAME
 # IMPORTANT: Replace "my-project" with your actual project name
-readonly PROJECT_SHORT_NAME="${PROJECT_SHORT_NAME:-demo-cicd-terraform}"
+readonly PROJECT_SHORT_NAME="${PROJECT_SHORT_NAME:demo-cicd-terraform}"
 
 # Full project name (used for globally unique resources like S3 buckets)
 # Format: {owner-lowercase}-{repo-name}
 # Example: "yourorg-your-repo"
 # GitHub Actions: Set via vars.PROJECT_NAME
 # IMPORTANT: Replace "owner-demo-cicd-terraformmy-project" with your actual project (e.g., "yourorg-your-repo")
-readonly PROJECT_NAME="${PROJECT_NAME:-eoin-demo-cicd-terraform}"
+readonly PROJECT_NAME="${PROJECT_NAME:mhanyc-demo-cicd-terraform}"
 
 # Project OU name (extracted from repository name)
 readonly PROJECT_OU_NAME="${GITHUB_REPO##*/}"

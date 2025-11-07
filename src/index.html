@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal blog about technology, innovation, and digital transformation">
+    <meta name="description" content="Personal blog about technology, cloud infrastructure, and software development">
     <meta name="author" content="Tech Enthusiast">
-    <title>Personal Blog - Tech & Innovation</title>
+    <title>Personal Blog - Exploring Technology</title>
     <style>
         * {
             margin: 0;
@@ -17,7 +17,7 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: #333;
-            background-color: #f0fdf4;
+            background-color: #f8fafc;
         }
 
         .container {
@@ -44,7 +44,7 @@
         .site-title {
             font-size: 1.5rem;
             font-weight: 700;
-            color: #059669;
+            color: #2563eb;
             text-decoration: none;
         }
 
@@ -62,11 +62,11 @@
         }
 
         nav a:hover {
-            color: #059669;
+            color: #2563eb;
         }
 
         .hero {
-            background: linear-gradient(135deg, #059669 0%, #047857 100%);
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
             color: white;
             padding: 4rem 0;
             text-align: center;
@@ -94,27 +94,26 @@
 
         .posts-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             margin-bottom: 3rem;
         }
 
         .post-card {
             background: white;
-            border-radius: 12px;
-            padding: 2rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             transition: transform 0.3s, box-shadow 0.3s;
-            border-left: 4px solid #059669;
         }
 
         .post-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+            transform: translateY(-4px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
 
         .post-date {
-            color: #059669;
+            color: #2563eb;
             font-size: 0.875rem;
             font-weight: 600;
             margin-bottom: 0.5rem;
@@ -133,11 +132,10 @@
 
         .about-section {
             background: white;
-            border-radius: 12px;
-            padding: 2.5rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             margin-bottom: 3rem;
-            border-top: 4px solid #059669;
         }
 
         .about-section h2 {
@@ -159,23 +157,12 @@
         }
 
         footer a {
-            color: #059669;
+            color: #2563eb;
             text-decoration: none;
         }
 
         footer a:hover {
             text-decoration: underline;
-        }
-
-        .badge {
-            display: inline-block;
-            background: #dcfce7;
-            color: #047857;
-            padding: 0.25rem 0.75rem;
-            border-radius: 12px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            margin-top: 0.5rem;
         }
 
         @media (max-width: 768px) {
@@ -196,12 +183,12 @@
 <body>
     <header>
         <div class="container">
-            <a href="/" class="site-title">Innovation Hub</a>
+            <a href="/" class="site-title">Tech Blog</a>
             <nav>
                 <ul>
-                    <li><a href="#posts">Articles</a></li>
+                    <li><a href="#posts">Posts</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Connect</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -209,72 +196,68 @@
 
     <section class="hero">
         <div class="container">
-            <h1>Exploring Technology & Innovation</h1>
-            <p>Thoughts on software engineering, cloud platforms, and digital transformation</p>
+            <h1>Welcome to My Blog</h1>
+            <p>Exploring technology, cloud infrastructure, and modern development practices</p>
         </div>
     </section>
 
     <main class="container">
         <section id="posts">
-            <h2 class="section-title">Latest Articles</h2>
+            <h2 class="section-title">Recent Posts</h2>
             <div class="posts-grid">
                 <article class="post-card">
-                    <div class="post-date">November 6, 2025</div>
-                    <h3>Modern CI/CD with GitHub Actions</h3>
+                    <div class="post-date">November 5, 2025</div>
+                    <h3>Building Scalable DevOps Pipelines</h3>
                     <p>
-                        Explore how GitHub Actions revolutionizes continuous integration and
-                        deployment. Learn about OIDC authentication, automated testing, and
-                        multi-environment deployment strategies that eliminate manual processes.
+                        Discover how to create robust CI/CD pipelines that scale with your team.
+                        Learn about automation, testing strategies, and deployment best practices
+                        that keep your infrastructure reliable and maintainable.
                     </p>
-                    <span class="badge">DevOps</span>
                 </article>
 
                 <article class="post-card">
-                    <div class="post-date">November 3, 2025</div>
-                    <h3>Serverless Architecture Deep Dive</h3>
+                    <div class="post-date">November 1, 2025</div>
+                    <h3>Cloud Architecture Patterns</h3>
                     <p>
-                        Discover the power of serverless computing with AWS Lambda, API Gateway,
-                        and DynamoDB. Understand event-driven architectures, cost optimization,
-                        and when serverless is the right choice for your application.
+                        Explore modern cloud architecture patterns including microservices,
+                        serverless computing, and container orchestration. Understand the
+                        trade-offs and when to apply each pattern effectively.
                     </p>
-                    <span class="badge">Cloud</span>
                 </article>
 
                 <article class="post-card">
-                    <div class="post-date">October 30, 2025</div>
-                    <h3>Security in Multi-Account AWS</h3>
+                    <div class="post-date">October 28, 2025</div>
+                    <h3>Infrastructure as Code Best Practices</h3>
                     <p>
-                        Master AWS Organizations and multi-account strategy for enterprise
-                        security. Learn about account isolation, cross-account roles, service
-                        control policies, and implementing least privilege access at scale.
+                        Learn how to manage infrastructure using code with tools like Terraform
+                        and OpenTofu. Discover versioning strategies, module design, and
+                        state management techniques for production environments.
                     </p>
-                    <span class="badge">Security</span>
                 </article>
             </div>
         </section>
 
         <section id="about" class="about-section">
-            <h2>About This Space</h2>
+            <h2>About This Blog</h2>
             <p>
-                This is a personal blog focused on modern software engineering practices,
-                cloud infrastructure design, and the ever-evolving landscape of technology.
-                I share practical insights from building production systems and working with
-                cutting-edge tools.
+                Welcome! This blog is dedicated to exploring the intersection of technology,
+                cloud infrastructure, and software development. I share insights from real-world
+                projects, lessons learned, and practical guides for building reliable systems.
             </p>
             <p>
-                My interests span DevOps automation, infrastructure as code, cloud-native
-                architectures, and security best practices. I believe in learning by doing
-                and sharing knowledge with the community. Each article aims to provide
-                actionable guidance backed by real-world experience.
+                Topics include DevOps automation, cloud architecture, infrastructure as code,
+                security best practices, and continuous deployment strategies. Whether you're
+                just starting out or looking to refine your skills, you'll find actionable
+                content here.
             </p>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Innovation Hub. Powered by AWS CloudFront, S3, and GitHub Actions.</p>
+            <p>&copy; 2025 Tech Blog. Deployed with AWS CloudFront and S3.</p>
             <p>
-                <a href="https://github.com/Celtikill/static-site">Source Code Available</a>
+                <a href="https://github.com/Celtikill/static-site">View Source on GitHub</a>
             </p>
         </div>
     </footer>
